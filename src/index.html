@@ -38,6 +38,39 @@ function addElement() {
  const currentDiv = document.getElementById("article1");
   document.body.insertBefore(newArticle1, currentArticle);}
     </SCRIPT>
+    <script>
+      document.body.onload = addElement;
+  
+  function addElement() {
+   
+    const newArticle1 = document.createElement("article");
+    const newArticle2 = document.createElement("article");
+    const newArticle3 = document.createElement("article");
+    const newArticle4 = document.createElement("article");
+    const newArticle5 = document.createElement("article");
+
+    const newContent1 = document.createTextNode("Hi there and greetings!");
+    newArticle1.appendChild(newContent1);
+    newArticle1.classList.add("message");
+    const newContent2 = document.createTextNode("Hi there and greetings!");
+    newArticle2.appendChild(newContent2);
+    newArticle2.classList.add("message");
+    const newContent3 = document.createTextNode("Hi there and greetings!");
+    newArticle3.appendChild(newContent3);
+    newArticle3.classList.add("message");
+    const newContent4 = document.createTextNode("Hi there and greetings!");
+    newArticle4.appendChild(newContent4);
+    newArticle4.classList.add("message");
+    const newContent5 = document.createTextNode("Hi there and greetings!");
+    newArticle5.appendChild(newContent5);
+    newArticle5.classList.add("message");
+    const currentDiv = document.getElementById("article1");
+    document.body.insertBefore(newArticle1, currentDiv);
+    document.body.insertBefore(newArticle2, currentDiv);
+    document.body.insertBefore(newArticle3, currentDiv);
+    document.body.insertBefore(newArticle4, currentDiv);
+    document.body.insertBefore(newArticle5, currentDiv);
+  }</script>
     </div>
   </body>
 </html>
