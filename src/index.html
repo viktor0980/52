@@ -19,6 +19,7 @@ document.body.onload = addElement;
 function addElement() {
 
   const newArticle1 = document.createElement("article");
+  article.className = "messsage";
   const newArticle2 = document.createElement("article");
   const newArticle3 = document.createElement("article");
   const newArticle4 = document.createElement("article");
@@ -32,7 +33,10 @@ function addElement() {
  newArticle2.appendChild(newContent);
  newArticle3.appendChild(newContent);
  newArticle4.appendChild(newContent);
- newArticle5.appendChild(newContent);}
+ newArticle5.appendChild(newContent);  
+ 
+ const currentDiv = document.getElementById("article1");
+  document.body.insertBefore(newArticle1, currentArticle);}
     </SCRIPT>
     </div>
   </body>
